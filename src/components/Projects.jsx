@@ -5,15 +5,15 @@ import { FaGithub, FaStar } from 'react-icons/fa';
 
 const featuredProjects = [
   {
-    title: 'Face Liveness Detection',
-    emoji: '👁️',
-    subtitle: 'UIDAI Concept Implementation',
+    title: 'Student Counseling System',
+    emoji: '🎓',
+    subtitle: 'Full Stack Web Platform',
     description:
-      'A computer vision system that detects whether a face in an image or video stream is real (live) or a spoof (photo/video attack). Built to address Aadhaar-based biometric authentication security concerns.',
+      'A web platform connecting students with academic counselors. Features real-time appointment scheduling, encrypted session notes, progress tracking dashboards, and secure messaging between students and counselors.',
     theory:
-      'Uses deep CNN features combined with texture analysis (LBP) and optical flow to distinguish live faces from printed photos, replay attacks, and 3D masks.',
-    tech: ['Python', 'OpenCV', 'Deep Learning', 'TensorFlow', 'CNN', 'LBP'],
-    color: '#6c63ff',
+      'Flask REST API backend with MySQL relational database. Role-based authentication separates student and counselor views. JavaScript frontend with dynamic form handling and session management via secure cookies.',
+    tech: ['Flask', 'MySQL', 'HTML/CSS', 'JavaScript', 'REST API', 'Python'],
+    color: '#10b981',
     github: 'https://github.com/prasanthkumarbhumula',
   },
   {
@@ -29,21 +29,6 @@ const featuredProjects = [
     github: 'https://github.com/prasanthkumarbhumula',
   },
   {
-    title: 'Learning Management System',
-    emoji: '📚',
-    subtitle: 'Full Stack MERN Application',
-    description:
-      'A full-featured LMS with course management, student enrollment, video streaming, quiz modules, progress tracking, and admin dashboards — built on the MERN stack with JWT authentication.',
-    theory:
-      'RESTful API architecture with role-based access control (RBAC). MongoDB stores course content, user progress, and quiz results. React frontend with Context API for state management.',
-    tech: ['MongoDB', 'Express.js', 'React', 'Node.js', 'JWT', 'REST API'],
-    color: '#22d3ee',
-    github: 'https://github.com/prasanthkumarbhumula',
-  },
-];
-
-const otherProjects = [
-  {
     title: 'Credit Card Fraud Detection',
     emoji: '🛡️',
     subtitle: 'Anomaly Detection Pipeline',
@@ -55,16 +40,31 @@ const otherProjects = [
     color: '#f59e0b',
     github: 'https://github.com/prasanthkumarbhumula',
   },
+];
+
+const otherProjects = [
   {
-    title: 'Student Counseling System',
-    emoji: '🎓',
-    subtitle: 'Full Stack Web Platform',
+    title: 'Learning Management System',
+    emoji: '📚',
+    subtitle: 'Full Stack MERN Application',
     description:
-      'A web platform connecting students with academic counselors. Features real-time appointment scheduling, encrypted session notes, progress tracking dashboards, and secure messaging between students and counselors.',
+      'A full-featured LMS with course management, student enrollment, video streaming, quiz modules, progress tracking, and admin dashboards — built on the MERN stack with JWT authentication.',
     theory:
-      'Flask REST API backend with MySQL relational database. Role-based authentication separates student and counselor views. JavaScript frontend with dynamic form handling and session management via secure cookies.',
-    tech: ['Flask', 'MySQL', 'HTML/CSS', 'JavaScript', 'REST API', 'Python'],
-    color: '#10b981',
+      'RESTful API architecture with role-based access control (RBAC). MongoDB stores course content, user progress, and quiz results. React frontend with Context API for state management.',
+    tech: ['MongoDB', 'Express.js', 'React', 'Node.js', 'JWT', 'REST API'],
+    color: '#22d3ee',
+    github: 'https://github.com/prasanthkumarbhumula',
+  },
+  {
+    title: 'Face Liveness Detection',
+    emoji: '👁️',
+    subtitle: 'UIDAI Concept Implementation',
+    description:
+      'A computer vision system that detects whether a face in an image or video stream is real (live) or a spoof (photo/video attack). Built to address Aadhaar-based biometric authentication security concerns.',
+    theory:
+      'Uses deep CNN features combined with texture analysis (LBP) and optical flow to distinguish live faces from printed photos, replay attacks, and 3D masks.',
+    tech: ['Python', 'OpenCV', 'Deep Learning', 'TensorFlow', 'CNN', 'LBP'],
+    color: '#6c63ff',
     github: 'https://github.com/prasanthkumarbhumula',
   },
 ];
@@ -433,7 +433,7 @@ const Projects = () => {
         <SectionTitle
           label="What I've Built"
           title="Projects"
-          subtitle="From research-grade ML systems to production full-stack applications."
+        //subtitle="From research-grade ML systems to production full-stack applications."
         />
 
         <div ref={ref}>

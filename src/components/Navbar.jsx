@@ -118,7 +118,7 @@ const Navbar = () => {
             ))}
 
             <motion.a
-              href="/resume.pdf" download
+              href="public/Prasanthkumar(software dev.pdf" download
               whileHover={{ scale: 1.05, boxShadow: '0 0 28px rgba(129,140,248,0.5)' }}
               whileTap={{ scale: 0.95 }}
               style={{
@@ -334,7 +334,7 @@ const Navbar = () => {
                 </div>
 
                 <motion.a
-                  href="/resume.pdf" download
+                  href="public/Prasanthkumar(software dev.pdf" download
                   whileHover={{ scale: 1.02, boxShadow: '0 0 28px rgba(129,140,248,0.4)' }}
                   whileTap={{ scale: 0.97 }}
                   style={{
