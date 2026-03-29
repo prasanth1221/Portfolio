@@ -12,6 +12,7 @@ const experiences = [
     description:
       'Developed synthetic data generation pipelines and multilingual NLP models. Built end-to-end AI pipelines handling data ingestion, preprocessing, model training, and evaluation at scale.',
     tags: ['Synthetic Data', 'NLP', 'Multilingual Pipelines', 'Data Engineering'],
+    certificateLink: 'https://drive.google.com/your-link-here',
   },
   {
     role: 'Machine Learning Intern',
@@ -22,6 +23,7 @@ const experiences = [
     description:
       'Implemented fraud detection system using Local Outlier Factor (LOF) and Support Vector Machines (SVM). Achieved high precision anomaly detection on imbalanced financial datasets.',
     tags: ['Fraud Detection', 'LOF', 'SVM', 'Anomaly Detection'],
+    certificateLink: 'https://drive.google.com/your-link-here',
   },
   {
     role: 'Research Intern',
@@ -32,6 +34,7 @@ const experiences = [
     description:
       'Researched Game Theory applications in Mobile Edge Computing. Analyzed congestion games and mechanism design for optimal resource allocation in distributed edge networks.',
     tags: ['Game Theory', 'Mobile Edge Computing', 'Congestion Games', 'Research'],
+    certificateLink: 'https://drive.google.com/your-link-here',
   },
 ];
 
@@ -102,6 +105,39 @@ const ExperienceCard = ({ exp, i, isInView }) => {
     </div>
   );
 };
+
+const ExternalLinkIcon = () => (
+  <svg
+    width="12"
+    height="12"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2.5"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+    <polyline points="15 3 21 3 21 9" />
+    <line x1="10" y1="14" x2="21" y2="3" />
+  </svg>
+);
+
+const CertificateIcon = () => (
+  <svg
+    width="13"
+    height="13"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2.5"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <circle cx="12" cy="8" r="6" />
+    <path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11" />
+  </svg>
+);
 
 const Card = ({ exp }) => (
   <motion.div
@@ -222,7 +258,7 @@ const Card = ({ exp }) => (
     </p>
 
     {/* Tags */}
-    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
+    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', marginBottom: '18px' }}>
       {exp.tags.map(tag => (
         <span
           key={tag}
@@ -242,6 +278,53 @@ const Card = ({ exp }) => (
         </span>
       ))}
     </div>
+
+    {/* Divider above certificate */}
+    <div
+      style={{
+        height: '1px',
+        background: 'rgba(255,255,255,0.06)',
+        marginBottom: '16px',
+      }}
+    />
+
+    {/* Certificate Link Button */}
+    <a
+      href={exp.certificateLink}
+      target="_blank"
+      rel="noopener noreferrer"
+      style={{
+        display: 'inline-flex',
+        alignItems: 'center',
+        gap: '7px',
+        padding: '8px 16px',
+        borderRadius: '10px',
+        background: `${exp.color}12`,
+        border: `1px solid ${exp.color}35`,
+        color: exp.color,
+        fontSize: '12px',
+        fontWeight: 600,
+        fontFamily: 'Space Grotesk, sans-serif',
+        letterSpacing: '0.03em',
+        textDecoration: 'none',
+        cursor: 'pointer',
+        transition: 'background 0.2s ease, border-color 0.2s ease, transform 0.2s ease',
+      }}
+      onMouseEnter={e => {
+        e.currentTarget.style.background = `${exp.color}22`;
+        e.currentTarget.style.borderColor = `${exp.color}70`;
+        e.currentTarget.style.transform = 'translateY(-1px)';
+      }}
+      onMouseLeave={e => {
+        e.currentTarget.style.background = `${exp.color}12`;
+        e.currentTarget.style.borderColor = `${exp.color}35`;
+        e.currentTarget.style.transform = 'translateY(0)';
+      }}
+    >
+      <CertificateIcon />
+      View Certificate
+      <ExternalLinkIcon />
+    </a>
   </motion.div>
 );
 
