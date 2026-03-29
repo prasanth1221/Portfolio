@@ -14,7 +14,7 @@ const featuredProjects = [
       'Flask REST API backend with MySQL relational database. Role-based authentication separates student and counselor views. JavaScript frontend with dynamic form handling and session management via secure cookies.',
     tech: ['Flask', 'MySQL', 'HTML/CSS', 'JavaScript', 'REST API', 'Python'],
     color: '#10b981',
-    github: 'https://github.com/prasanthkumarbhumula',
+    github: 'https://github.com/prasanth1221/StudentCounslingSystem',
   },
   {
     title: 'Dynamic Pricing with RL',
