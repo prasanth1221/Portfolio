@@ -12,7 +12,7 @@ const experiences = [
     description:
       'Developed synthetic data generation pipelines and multilingual NLP models. Built end-to-end AI pipelines handling data ingestion, preprocessing, model training, and evaluation at scale.',
     tags: ['Synthetic Data', 'NLP', 'Multilingual Pipelines', 'Data Engineering'],
-    certificateLink: 'https://drive.google.com/your-link-here',
+    certificateLink: 'https://drive.google.com/file/d/14Jc022ST0obobQZVCOYQM0X1-s69Vvxm/view?usp=sharing',
   },
   {
     role: 'Machine Learning Intern',
@@ -23,7 +23,7 @@ const experiences = [
     description:
       'Implemented fraud detection system using Local Outlier Factor (LOF) and Support Vector Machines (SVM). Achieved high precision anomaly detection on imbalanced financial datasets.',
     tags: ['Fraud Detection', 'LOF', 'SVM', 'Anomaly Detection'],
-    certificateLink: 'https://drive.google.com/your-link-here',
+    certificateLink: 'https://drive.google.com/file/d/13gsCK1WNz9PA4L9iUEOAnwyzY9XVfVZF/view?usp=sharing',
   },
   {
     role: 'Research Intern',
@@ -34,7 +34,7 @@ const experiences = [
     description:
       'Researched Game Theory applications in Mobile Edge Computing. Analyzed congestion games and mechanism design for optimal resource allocation in distributed edge networks.',
     tags: ['Game Theory', 'Mobile Edge Computing', 'Congestion Games', 'Research'],
-    certificateLink: 'https://drive.google.com/your-link-here',
+    certificateLink: 'https://drive.google.com/file/d/1ldrAjSEZ-e12rc8EDgc9fRIz4-TP4Wv6/view?usp=sharing',
   },
 ];
 
